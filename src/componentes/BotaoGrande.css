@@ -1,0 +1,37 @@
+.botao-grande {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 28px;
+  border-radius: var(--borda-raio-grande);
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  box-shadow: var(--sombra-botao);
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: surgir 0.5s ease-out backwards;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.botao-grande:active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao-grande:nth-child(1) { animation-delay: 0s; }
+.botao-grande:nth-child(2) { animation-delay: 0.1s; }
+.botao-grande:nth-child(3) { animation-delay: 0.2s; }
+.botao-grande:nth-child(4) { animation-delay: 0.3s; }
+.botao-grande:nth-child(5) { animation-delay: 0.4s; }
+
+.botao-grande-icone {
+  font-size: 36px;
+  line-height: 1;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.botao-grande-texto {
+  flex: 1;
+  text-align: left;
+}

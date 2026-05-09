@@ -1,0 +1,28 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  margin-bottom: 20px;
+}
+
+.cabecalho-voltar {
+  background: var(--cor-fundo-card);
+  color: var(--cor-texto);
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+  white-space: nowrap;
+}
+
+.cabecalho-voltar:active {
+  transform: scale(0.95);
+}
+
+.cabecalho-titulo {
+  font-size: 24px;
+  color: var(--cor-texto);
+  flex: 1;
+}

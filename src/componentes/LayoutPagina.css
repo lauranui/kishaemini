@@ -1,0 +1,48 @@
+.layout-pagina {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--cor-fundo) 0%, #F0E6F6 50%, #E8F4FD 100%);
+  padding-bottom: 40px;
+}
+
+.layout-conteudo {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.adesivo-decorativo {
+  position: fixed;
+  font-size: 32px;
+  opacity: 0.3;
+  z-index: 0;
+  pointer-events: none;
+  animation: flutuar 4s ease-in-out infinite;
+}
+
+.adesivo-topo-esquerda {
+  top: 15px;
+  left: 15px;
+  animation-delay: 0s;
+}
+
+.adesivo-topo-direita {
+  top: 20px;
+  right: 15px;
+  animation-delay: 1s;
+}
+
+.adesivo-baixo-esquerda {
+  bottom: 30px;
+  left: 20px;
+  animation-delay: 2s;
+}
+
+.adesivo-baixo-direita {
+  bottom: 25px;
+  right: 20px;
+  animation-delay: 3s;
+}

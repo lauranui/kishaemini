@@ -1,0 +1,135 @@
+.criacoes-abas {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.criacoes-aba {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--borda-raio);
+  background: var(--cor-fundo-card);
+  font-size: 15px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s, background 0.2s;
+  color: var(--cor-texto);
+}
+
+.criacoes-aba.ativa {
+  background: var(--cor-lilas);
+  color: white;
+}
+
+.criacoes-aba:active {
+  transform: scale(0.96);
+}
+
+.criacoes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.criacoes-vazio {
+  text-align: center;
+  padding: 48px 20px;
+  animation: surgir 0.4s ease-out;
+}
+
+.criacoes-vazio-emoji {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 16px;
+  animation: flutuar 3s ease-in-out infinite;
+}
+
+.criacoes-vazio p {
+  font-size: 18px;
+  color: var(--cor-texto);
+}
+
+.criacoes-vazio-dica {
+  font-size: 14px !important;
+  color: var(--cor-texto-claro) !important;
+  margin-top: 8px;
+}
+
+.criacao-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--borda-raio);
+  background: var(--cor-fundo-card);
+  box-shadow: var(--sombra);
+  animation: surgir 0.4s ease-out backwards;
+}
+
+.criacao-card:nth-child(odd) { animation-delay: 0s; }
+.criacao-card:nth-child(even) { animation-delay: 0.08s; }
+
+.criacao-card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.criacao-card-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  line-height: 1.1;
+  min-width: 50px;
+}
+
+.criacao-card-info {
+  flex: 1;
+}
+
+.criacao-card-info h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.criacao-data {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.criacao-excluir {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 20px;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.criacao-excluir:active {
+  transform: scale(1.2);
+}
+
+.cartinha-card-preview {
+  flex: 1;
+  min-width: 0;
+}
+
+.cartinha-card-texto {
+  font-size: 14px;
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.cartinha-card-adesivos {
+  font-size: 16px;
+  margin-top: 4px;
+  display: block;
+}
+
+.cartinha-card .criacao-card-info {
+  flex: 0;
+  min-width: fit-content;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+:root {
+  --cor-azul: #89CFF0;
+  --cor-rosa: #FFB6C1;
+  --cor-lilas: #C8A2C8;
+  --cor-azul-escuro: #6BB8E8;
+  --cor-rosa-escuro: #F4929B;
+  --cor-lilas-escuro: #B48AB4;
+  --cor-fundo: #FFF5F9;
+  --cor-fundo-card: #FFFFFF;
+  --cor-texto: #4A4A6A;
+  --cor-texto-claro: #7A7A9A;
+  --sombra: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --sombra-botao: 0 6px 20px rgba(0, 0, 0, 0.15);
+  --borda-raio: 20px;
+  --borda-raio-grande: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button {
+  font-family: 'Bubblegum Sans', cursive;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input, textarea {
+  font-family: 'Bubblegum Sans', cursive;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Animações globais */
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulsar {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Scrollbar estilizada */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-lilas);
+  border-radius: 10px;
+}

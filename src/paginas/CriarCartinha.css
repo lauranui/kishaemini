@@ -1,0 +1,153 @@
+.cartinha-templates {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 0;
+  margin-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cartinha-template-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  font-size: 24px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  border: 3px solid transparent;
+}
+
+.cartinha-template-btn.ativo {
+  border-color: var(--cor-lilas);
+  transform: scale(1.05);
+}
+
+.cartinha-template-nome {
+  font-size: 11px;
+}
+
+.cartinha-preview {
+  position: relative;
+  border-radius: var(--borda-raio);
+  padding: 24px;
+  min-height: 280px;
+  box-shadow: var(--sombra);
+  margin-bottom: 16px;
+  overflow: hidden;
+  animation: surgir 0.4s ease-out;
+}
+
+.cartinha-borda-decorativa span {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.cartinha-deco-tl { top: 8px; left: 8px; }
+.cartinha-deco-tr { top: 8px; right: 8px; }
+.cartinha-deco-bl { bottom: 8px; left: 8px; }
+.cartinha-deco-br { bottom: 8px; right: 8px; }
+
+.cartinha-texto {
+  width: 100%;
+  min-height: 180px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  resize: none;
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Bubblegum Sans', cursive;
+  position: relative;
+  z-index: 2;
+}
+
+.cartinha-texto::placeholder {
+  opacity: 0.5;
+}
+
+.cartinha-adesivo-posicionado {
+  position: absolute;
+  font-size: 28px;
+  background: none;
+  padding: 0;
+  z-index: 3;
+  transition: transform 0.2s;
+  cursor: pointer;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.15));
+}
+
+.cartinha-adesivo-posicionado:active {
+  transform: scale(1.3);
+}
+
+.cartinha-instrucao {
+  font-size: 14px;
+  color: var(--cor-texto-claro);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.cartinha-adesivos-painel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.cartinha-adesivo-btn {
+  font-size: 28px;
+  padding: 8px;
+  background: var(--cor-fundo-card);
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+}
+
+.cartinha-adesivo-btn:active {
+  transform: scale(1.2);
+}
+
+.cartinha-acoes {
+  display: flex;
+  gap: 12px;
+}
+
+.cartinha-limpar {
+  flex: 1;
+  padding: 14px;
+  border-radius: var(--borda-raio);
+  background: var(--cor-fundo-card);
+  color: var(--cor-texto);
+  font-size: 17px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+}
+
+.cartinha-limpar:active {
+  transform: scale(0.96);
+}
+
+.cartinha-salvar {
+  flex: 2;
+  padding: 14px;
+  border-radius: var(--borda-raio);
+  background: linear-gradient(135deg, var(--cor-rosa), var(--cor-rosa-escuro));
+  color: white;
+  font-size: 18px;
+  box-shadow: var(--sombra-botao);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.cartinha-salvar.salvo {
+  background: linear-gradient(135deg, #6BCB77, #4CAF50);
+}
+
+.cartinha-salvar:active {
+  transform: scale(0.96);
+}

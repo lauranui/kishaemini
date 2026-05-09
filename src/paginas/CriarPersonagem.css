@@ -1,0 +1,171 @@
+.personagem-preview {
+  border-radius: var(--borda-raio-grande);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  box-shadow: var(--sombra);
+  background: var(--cor-fundo-card);
+  animation: surgir 0.4s ease-out;
+  min-height: 220px;
+}
+
+.personagem-avatar-svg {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.personagem-avatar-svg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.personagem-acoes-topo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.personagem-nome-input {
+  flex: 1;
+  padding: 14px 20px;
+  border: 3px solid var(--cor-lilas);
+  border-radius: var(--borda-raio);
+  font-size: 18px;
+  text-align: center;
+  background: var(--cor-fundo-card);
+  color: var(--cor-texto);
+  transition: border-color 0.3s;
+}
+
+.personagem-nome-input:focus {
+  border-color: var(--cor-lilas-escuro);
+}
+
+.personagem-aleatorio {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--borda-raio);
+  background: var(--cor-fundo-card);
+  font-size: 28px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.personagem-aleatorio:active {
+  transform: scale(0.9) rotate(180deg);
+}
+
+.personagem-categorias {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding: 4px 0;
+  margin-bottom: 16px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.personagem-cat-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  padding: 8px 10px;
+  border-radius: 14px;
+  background: var(--cor-fundo-card);
+  box-shadow: var(--sombra);
+  font-size: 20px;
+  transition: transform 0.2s, background 0.2s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.personagem-cat-btn.ativo {
+  background: var(--cor-lilas);
+  color: white;
+}
+
+.personagem-cat-nome {
+  font-size: 10px;
+}
+
+.personagem-opcoes {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 8px 0;
+  margin-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.personagem-opcao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+  border-radius: var(--borda-raio);
+  background: var(--cor-fundo-card);
+  box-shadow: var(--sombra);
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.personagem-opcao.selecionado {
+  box-shadow: 0 0 0 3px var(--cor-lilas), var(--sombra);
+  transform: scale(1.05);
+}
+
+.personagem-opcao:active {
+  transform: scale(0.95);
+}
+
+.personagem-opcao-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.personagem-opcao-cor {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.personagem-opcao-nome {
+  font-size: 10px;
+  color: var(--cor-texto-claro);
+  max-width: 60px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.personagem-salvar {
+  width: 100%;
+  padding: 16px;
+  border-radius: var(--borda-raio);
+  background: linear-gradient(135deg, var(--cor-lilas), var(--cor-lilas-escuro));
+  color: white;
+  font-size: 20px;
+  box-shadow: var(--sombra-botao);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.personagem-salvar.salvo {
+  background: linear-gradient(135deg, #6BCB77, #4CAF50);
+}
+
+.personagem-salvar:active {
+  transform: scale(0.96);
+}
